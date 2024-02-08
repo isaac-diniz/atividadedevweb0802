@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Sem Scroll com Rodapé na Parte Inferior</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+
+        main {
+            display: flex;
+            padding: 10px;
+            flex: 1;
+            /* Ocupa o espaço restante disponível */
+        }
+
+        aside {
+            background-color: #ddd;
+            width: 20%;
+            flex-shrink: 0;
+            margin-right: 250px;
+            /* Impede que a barra lateral encolha */
+        }
+
+        .classe1 {
+            margin-top: 250px;
+            width: 100px;
+            height: 100px;
+            box-sizing: border-box;
+            margin-right: 200px;
+            background-color: #9b9b9b;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .classe2 {
+            margin-top: 250px;
+            width: 100px;
+            height: 100px;
+            box-sizing: border-box;
+            margin-right: 200px;
+            background-color: #9b9b9b;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .classe3 {
+            margin-top: 250px;
+            width: 100px;
+            height: 100px;
+            box-sizing: border-box;
+            margin-right: 200px;
+            background-color: #9b9b9b;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h1>navbar</h1>
+    </nav>
+
+    <main>
+        <aside>
+            <h2>balabala</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem veritatis obcaecati iure nesciunt
+                deserunt, illo atque explicabo, aspernatur consequuntur velit vero quas dolore fugiat, corporis ut
+                blanditiis nemo sed error? Saepe adipisci blanditiis reprehenderit esse tempora modi cum sapiente,
+                pariatur officiis quos ea quod debitis ipsa aliquid consectetur vitae ducimus distinctio eum delectus.
+                Mollitia magni debitis officiis, veniam inventore necessitatibus, architecto sed qui quod adipisci at
+                temporibus nihil. Quae, maxime. Iure dignissimos quaerat quas voluptates. Voluptatibus minima, maiores
+                accusamus reiciendis culpa voluptates itaque beatae, sapiente maxime labore quaerat voluptatem quia eius
+                cum quasi sint mollitia fuga. Aut magnam officia veritatis?</p>
+        </aside>
+
+        <div class="classe1">Classe 1</div>
+        <div class="classe2">Classe 2</div>
+        <div class="classe3">Classe 3</div>
+    </main>
+
+    <footer>
+        <p>Rodapé</p>
+    </footer>
+
+</body>
+
+</html>
